@@ -1,5 +1,6 @@
 import inAppBrowser from "react-native-inappbrowser-reborn";
-import { URLSearchParams } from 'whatwg-url';
+import URLSearchParams from '@ungap/url-search-params';
+
 import request from './request';
 import { query } from '../util';
 

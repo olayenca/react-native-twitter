@@ -1,4 +1,4 @@
-import {URLSearchParams } from 'whatwg-url';
+import URLSearchParams from '@ungap/url-search-params';
 
 export function omit(keys, obj) {
   return keys.reduce((acc, key) => {
