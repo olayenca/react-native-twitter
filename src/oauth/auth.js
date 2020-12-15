@@ -59,7 +59,7 @@ export default async function auth(
       query({ oauth_token: requestToken, force_login: forceLogin, screen_name: screenName })
       }`);
 
-    const params = new URLSearchParams(result.url.split('?')[1]);
+    const params = new URLSearchParams(result?.url?.split('?')[1]);
     if (result.type === 'success' && params.has('oauth_verifier')) {
       return getAccessToken(
         { ...tokens, requestToken, requestTokenSecret },
